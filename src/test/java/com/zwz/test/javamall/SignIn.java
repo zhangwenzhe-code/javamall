@@ -29,5 +29,6 @@ public class SignIn extends BaseJavamall{
 		Thread.sleep(1000);
 		driver.findElement(By.className("blue_btn")).click();
 		Thread.sleep(5000);
+		Thread.sleep(1000);
 	}
 }
