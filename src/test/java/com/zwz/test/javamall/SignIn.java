@@ -28,6 +28,6 @@ public class SignIn extends BaseJavamall{
 		driver.findElement(By.id("iptlogin")).sendKeys("1234");
 		Thread.sleep(1000);
 		driver.findElement(By.className("blue_btn")).click();
-		Thread.sleep(6000);
+		Thread.sleep(3000);
 	}
 }
