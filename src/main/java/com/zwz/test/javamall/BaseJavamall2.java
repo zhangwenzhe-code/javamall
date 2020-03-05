@@ -21,7 +21,7 @@ public class BaseJavamall2 {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://localhost:8080/javamall/admin/backendUi!main.do");
 		driver.manage().window().maximize();
-		Cookie cookie=new Cookie("JSESSIONID","0B5471038031A62AD1D3077A20BAC251");
+		Cookie cookie=new Cookie("JSESSIONID","90757886CDA0A2B2C35DB60605CFC7D0");
 		driver.manage().deleteAllCookies();
 		driver.manage().addCookie(cookie);
 		driver.get("http://localhost:8080/javamall/admin/backendUi!main.do");

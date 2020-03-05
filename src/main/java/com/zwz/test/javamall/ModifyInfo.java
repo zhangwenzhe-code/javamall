@@ -41,7 +41,7 @@ public class ModifyInfo {
 		
 	}
 	@Test(dataProvider="dp")
-	public void modifyInfo(String username,String pwd) throws Exception {
+	public void modifyInfo(String username,String pwd,String phone) throws Exception {
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(pwd);
 		Thread.sleep(10000);
@@ -75,7 +75,7 @@ public class ModifyInfo {
 		regionSel.selectByIndex(1);
 		Thread.sleep(2000);
 		driver.findElement(By.name("mobile")).clear();
-		driver.findElement(By.name("mobile")).sendKeys("18730226516");
+		driver.findElement(By.name("mobile")).sendKeys(phone);
 		Thread.sleep(4000);
 		driver.findElement(By.name("btnSubmit")).click();
 		Thread.sleep(3000);
@@ -85,9 +85,9 @@ public class ModifyInfo {
 	}
 	@DataProvider(name="dp")
 	public Object[][] getData() {
-		Object[][] data= {{"bob1","123456"},
-				{"merar","123456"},
-				{"join","123456"}
+		Object[][] data= {{"bob1","123456","18730226516"},
+				{"merar","123456","18730226517"},
+				{"join","123456","18730226518"}
 				};
 		return data;
 	}
